@@ -159,6 +159,10 @@ select#shopall {
     color: white;
 }
 
+.sliders {
+    position: relative;
+}
+
 .sliders img {
     width: 100%;
 }
@@ -193,15 +197,61 @@ button {
     color: white;
 }
 
-.equipment img {
+.equipment,
+.baby,
+.diabetes,
+.vitamin {
     position: relative;
 }
 
-.eui-dicrition {
+.parenthood {
     position: absolute;
-    /* top: 20%;
-    right: 20%; */
+    top: 30px;
+    left: 175px;
+    text-align: end;
 }
+
+.parenthood h1,
+.dia h1,
+.parent h1,
+.vit h1 {
+    font-size: 22px;
+}
+
+.parenthood p,
+.dia p,
+.parent p,
+.vit p {
+    font-size: 14px;
+    width: 160px;
+}
+
+.parenthood a,
+.dia a,
+.parent a,
+.vit a {
+    text-decoration: none;
+    color: #0973ba;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.dia,
+.vit {
+    position: absolute;
+    top: 30px;
+    left: 142px;
+    text-align: end;
+}
+
+.parent {
+    position: absolute;
+    top: 20px;
+    left: 17px;
+}
+
 
 @media only screen and (max-width: 1023px) {
     .header {

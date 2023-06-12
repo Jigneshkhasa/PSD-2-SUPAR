@@ -161,26 +161,135 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="container">
-        <div class="product">
-            <div class="left-prod">
-                <div class="two-row">
-                    <div class="equip">
-                        <div class="equipment">
-                            <img src="./image/wheelchair.png" alt="">
-                            <div class="eui-dicrition">
-                                <h1>Equipment Hire</h1>
-                                <p>Home Health Equipment</p>
-                                <a href="/">Shop Now <img src="./image/red-arrow.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
+        <div class="sliders">
+            <img src="./image/main-image-slide.png" alt="">
+            <div class="container">
+                <div class="slide-describtion">
+                    <h1>Home Health Equipment</h1>
+                    <p>View our large range of mobility aids and home health equipment for hire</p>
+                    <button class="moreinfo">More Info <i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="sliders">
+            <img src="./image/main-image-slide.png" alt="">
+            <div class="container">
+                <div class="slide-describtion">
+                    <h1>Home Health Equipment</h1>
+                    <p>View our large range of mobility aids and home health equipment for hire</p>
+                    <button class="moreinfo">More Info <i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="sliders">
+            <img src="./image/main-image-slide.png" alt="">
+            <div class="container">
+                <div class="slide-describtion">
+                    <h1>Home Health Equipment</h1>
+                    <p>View our large range of mobility aids and home health equipment for hire</p>
+                    <button class="moreinfo">More Info <i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="sliders">
+            <img src="./image/main-image-slide.png" alt="">
+            <div class="container">
+                <div class="slide-describtion">
+                    <h1>Home Health Equipment</h1>
+                    <p>View our large range of mobility aids and home health equipment for hire</p>
+                    <button class="moreinfo">More Info <i class="fa-solid fa-angle-right"></i></button>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="product">
+            <div class="two-row">
+                <div class="equipment">
+                    <img src="./image/wheelchair.png" alt="">
+                    <div class="parenthood">
+                        <h1>Equipment Hire</h1>
+                        <p>Home Health Equipment</p>
+                        <a href="/">Shop Now <img src="./image/red-arrow.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="baby">
+                    <img src="./image/baby.png" alt="">
+                    <div class="parenthood">
+                        <h1>baby</h1>
+                        <p>Welcome to Parenthood</p>
+                        <a href="/">Shop Now <img src="./image/red-arrow.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="diabetes">
+                <img src="./image/diabetes.png" alt="">
+                <div class="dia">
+                    <h1>Diabetes Products</h1>
+                    <p>Welcome to Parenthood</p>
+                    <a href="/">Shop Now <img src="./image/red-arrow.png" alt=""></a>
+                </div>
+            </div>
+            <div class="two-row">
+                <div class="equipment">
+                    <img src="./image/home-haelth.png" alt="">
+                    <div class="parent">
+                        <h1>Home Health</h1>
+                        <p>Best Quality Home Health Equipment</p>
+                        <a href="/">Shop Now <img src="./image/red-arrow.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="baby">
+                    <img src="./image/sport.png" alt="">
+                    <div class="parent">
+                        <h1>baby</h1>
+                        <p>Welcome to Parenthood</p>
+                        <a href="/">Shop Now <img src="./image/red-arrow.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin">
+                <img src="./image/vitamin.png" alt="">
+                <div class="vit">
+                    <h1>Diabetes Products</h1>
+                    <p>Welcome to Parenthood</p>
+                    <a href="/">Shop Now <img src="./image/red-arrow.png" alt=""></a>
+                </div>
+            </div>
+            <div class="two-row">
+                <div class="equipment">
+                    <img src="./image/home-haelth.png" alt="">
+                    <div class="parent">
+                        <h1>Home Health</h1>
+                        <p>Best Quality Home Health Equipment</p>
+                        <a href="/">Shop Now <img src="./image/red-arrow.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="baby">
+                    <img src="./image/sport.png" alt="">
+                    <div class="parent">
+                        <h1>baby</h1>
+                        <p>Welcome to Parenthood</p>
+                        <a href="/">Shop Now <img src="./image/red-arrow.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="vitamin">
+                <img src="./image/vitamin.png" alt="">
+                <div class="vit">
+                    <h1>Diabetes Products</h1>
+                    <p>Welcome to Parenthood</p>
+                    <a href="/">Shop Now <img src="./image/red-arrow.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="featured">
+
+        </div>
+    </div>
+
+
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
@@ -189,6 +298,28 @@
     <script src="https://kit.fontawesome.com/a97145b659.js" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
+            $('.mainslider').slick();
+            $('.product').slick({
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 425,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
             $('.uspslider').slick({
                 speed: 300,
                 slidesToShow: 4,
