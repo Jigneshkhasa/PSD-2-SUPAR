@@ -54,9 +54,11 @@
 }
 
 .callnumber a {
-    font-size: 15PX;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 23PX;
     color: #47768a;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .myaccount {
@@ -68,9 +70,26 @@
     gap: 10px;
 }
 
-.search input[type="search"] {
-    padding: 13px 240px 13px 5px;
+.search button {
+    padding: 10px;
+    background-color: #0973ba;
+    color: white;
     border: none;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.search {
+    position: relative;
+}
+
+.search input[type="search"] {
+    padding: 13px 45px 13px 5px;
+    border: none;
+    width: 428px;
 }
 
 .card {
@@ -84,6 +103,17 @@
     display: grid;
     align-items: start;
     text-align: start;
+    position: relative;
+}
+
+.australia h5 {
+    position: absolute;
+    color: white;
+    background-color: red;
+    padding: 3px 7px;
+    border-radius: 50%;
+    right: 57px;
+    bottom: 25px;
 }
 
 .header p {
@@ -111,16 +141,27 @@ select#cur {
 .online span,
 .shopingon span {
     font-weight: bold;
+    font-size: 20px;
 }
 
 .hire,
-.instore,
 .online,
 .shopingon {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.instore {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+.uspslider p {
+    font-size: 20px;
 }
 
 .uspslider {
@@ -142,8 +183,10 @@ select#cur {
 }
 
 .navbar ul li {
-    font-family: 'Myriad Pro Regular';
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     color: white;
+    font-size: 18px;
 }
 
 .navbar ul {
@@ -156,10 +199,13 @@ select#cur {
 }
 
 select#shopall {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     border: none;
     background-color: #2f84bd;
     padding: 16px 32px;
     color: white;
+    font-size: 18px;
 }
 
 .sliders {
@@ -168,6 +214,13 @@ select#shopall {
 
 .sliders img {
     width: 100%;
+}
+
+.slide-describtion img {
+    width: 32px;
+    display: inline;
+    text-align: center;
+    padding-left: 12px;
 }
 
 .slide-describtion {
@@ -181,6 +234,7 @@ select#shopall {
     font-family: 'Ubuntu', sans-serif;
     font-size: 72px;
     font-weight: bold;
+    color: white;
 }
 
 .slide-describtion p {
@@ -188,6 +242,7 @@ select#shopall {
     font-size: 24px;
     font-weight: 400;
     padding: 35px 0;
+    color: white;
 }
 
 .moreinfo {
@@ -199,6 +254,10 @@ select#shopall {
     border: none;
     color: white;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
 }
 
 .equipment,
@@ -210,7 +269,7 @@ select#shopall {
 
 .parenthood {
     position: absolute;
-    top: 30px;
+    top: 40px;
     left: 175px;
     text-align: end;
 }
@@ -220,6 +279,7 @@ select#shopall {
 .parent h1,
 .vit h1 {
     font-size: 22px;
+    padding-bottom: 6px;
 }
 
 .parenthood p,
@@ -228,19 +288,22 @@ select#shopall {
 .vit p {
     font-size: 14px;
     width: 160px;
+    padding-bottom: 20px;
 }
 
 .parenthood a,
 .dia a,
 .parent a,
 .vit a {
+    font-family: 'Ubuntu', sans-serif;
     text-decoration: none;
     color: #0973ba;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
+    font-weight: 500;
 }
-
 
 .dia,
 .vit {
@@ -252,7 +315,7 @@ select#shopall {
 
 .parent {
     position: absolute;
-    top: 20px;
+    top: 40px;
     left: 17px;
 }
 
@@ -338,6 +401,7 @@ select#shopall {
 .redb {
     color: #989898;
     position: relative;
+    padding-left: 10px;
 }
 
 .redb::after {
@@ -376,6 +440,7 @@ select#shopall {
     padding: 35px 80px;
     width: 278px;
     height: 278px;
+    position: relative;
 }
 
 .crutch p {
@@ -385,9 +450,15 @@ select#shopall {
     height: 40px;
 }
 
-.instore {
-    display: flex;
-    justify-content: space-between;
+.crutch :nth-child(3) {
+    color: #0973ba;
+}
+
+img.sale {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .child a {
@@ -405,8 +476,7 @@ select#shopall {
 }
 
 .child img {
-    width: 350px;
-    height: 210px;
+    width: 100%;
 }
 
 .child {
@@ -461,7 +531,7 @@ button.view {
 
 .brands img {
     outline: 2px solid #ebebeb;
-    outline-offset: 35px;
+    outline-offset: 15px;
 }
 
 .costumer {
@@ -472,6 +542,8 @@ button.view {
 .pharmasy h3 {
     font-size: 18px;
     padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 .pharmasy h1 {
@@ -484,6 +556,10 @@ button.view {
     font-size: 16px;
     font-weight: 400;
     padding: 8px;
+}
+
+.costumer img {
+    padding-bottom: 90px;
 }
 
 .pharmasy {
@@ -513,6 +589,7 @@ button.view {
     color: white;
     background-color: #0e66a1;
     border-radius: 10px;
+    transition: 1s;
 }
 
 .query {
@@ -558,10 +635,12 @@ button.view {
 .query :nth-child(4):hover {
     color: white;
     background-color: #3683b6;
+    transition: 1s;
 }
 
 .mainmap img {
     display: flex;
+    width: 100%;
 }
 
 .maindetails {
@@ -604,11 +683,15 @@ button#sub {
     padding: 15px 45px;
     border-radius: 5px;
     border: none;
-    align-items: end;
     font-size: 22px;
     color: white;
     background-color: #ed2328;
     cursor: pointer;
+}
+
+button#sub:hover {
+    background-color: #2f84bd;
+    transition: 1s;
 }
 
 form {
@@ -621,7 +704,7 @@ form {
 .footer {
     display: flex;
     justify-content: space-between;
-    padding: 20px 40px
+    padding: 20px 0 20px 40px;
 }
 
 .quick h1 {
@@ -685,6 +768,20 @@ form {
 
 .reserved a span {
     color: #0e66a1;
+}
+
+@media only screen and (max-width: 1366px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .search input[type="search"] {
+        padding: 13px 170px 13px 5px;
+    }
+
+    .slide-describtion h1 {
+        font-size: 60px;
+    }
 }
 
 @media only screen and (max-width: 1023px) {
