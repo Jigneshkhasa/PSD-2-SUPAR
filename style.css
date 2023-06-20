@@ -12,7 +12,7 @@
     font-family: 'Myriad Pro Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Myriad Pro Regular'), url('MYRIADPRO-REGULAR.woff') format('woff');
+    src: local('Myriad Pro Regular'), url('./font/MYRIADPRO-REGULAR.woff') format('woff');
 }
 
 * {
@@ -555,6 +555,11 @@ button.view {
     background-color: white;
 }
 
+.query :nth-child(4):hover {
+    color: white;
+    background-color: #3683b6;
+}
+
 .mainmap img {
     display: flex;
 }
@@ -565,12 +570,13 @@ button.view {
     align-items: center;
     text-align: start;
     background-color: #0973ba;
-    margin-top: 30px;
+    margin: 30px 0;
     border-radius: 2px;
+    padding: 35px 0;
 }
 
 .details p,
-h1 {
+.details h1 {
     padding-left: 34px;
     color: white;
 }
@@ -586,21 +592,99 @@ h1 {
 
 input#fname,
 input#email {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
     padding: 20px 120px 20px 20px;
     background-color: #f4f4f4;
     border: none;
     border-radius: 5px;
 }
 
-input#fname {
-    margin: 35px;
-}
-
 button#sub {
-    padding: 20px 45px;
+    padding: 15px 45px;
     border-radius: 5px;
     border: none;
     align-items: end;
+    font-size: 22px;
+    color: white;
+    background-color: #ed2328;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px
+}
+
+.quick h1 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Myriad Pro Regular';
+    color: #0973ba;
+}
+
+.quick ul a {
+    text-decoration: none;
+}
+
+.quick ul li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #666666;
+    line-height: 35px;
+}
+
+.connect {
+    display: grid;
+    justify-content: space-between;
+}
+
+.media img {
+    padding: 10px 6px;
+}
+
+.payment img {
+    padding: 7px 8px;
+    border: 1px solid #dfdfdf;
+    height: 32px;
+    width: 62px;
+}
+
+.payment p {
+    padding: 20px 0;
+}
+
+.vaified img {
+    padding-right: 30px;
+}
+
+.vaified {
+    align-items: center;
+    display: flex;
+}
+
+.reserved {
+    text-align: center;
+}
+
+.reserved a {
+    text-decoration: none;
+    color: #83898e;
+    padding: 20px 0;
+    display: block;
+}
+
+.reserved a span {
+    color: #0e66a1;
 }
 
 @media only screen and (max-width: 1023px) {
