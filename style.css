@@ -452,7 +452,14 @@ select#shopall {
 
 .crutch :nth-child(3) {
     color: #0973ba;
+    padding: 35px;
 }
+
+/* .addto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 img.sale {
     position: absolute;
