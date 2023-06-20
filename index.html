@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a97145b659.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
     <link rel="stylesheet" href="./style.css">
     <title>Supar Pharmacy Plus</title>
 </head>
@@ -323,6 +324,7 @@
     <div class="service">
         <div class="container">
             <p>Instore Services</p>
+            <button class="view">View All</button>
             <div class="instore">
                 <div class="child">
                     <img src="./image/pre.png" alt="">
@@ -359,6 +361,24 @@
                     <a href="/">IGA X-press <i class="fa-sharp fa-regular fa-circle-right"></i></a>
                 </div>
             </div>
+            <div class="instore hide-conten">
+                <div class="child">
+                    <img src="./image/pre.png" alt="">
+                    <a href="/">Prescription Services <i class="fa-sharp fa-regular fa-circle-right"></i></a>
+                </div>
+                <div class="child">
+                    <img src="./image/baby&-child.png" alt="">
+                    <a href="/">Baby & Child Health <i class="fa-sharp fa-regular fa-circle-right"></i></a>
+                </div>
+                <div class="child">
+                    <img src="./image/continence.png" alt="">
+                    <a href="/">Continence <i class="fa-sharp fa-regular fa-circle-right"></i></a>
+                </div>
+                <div class="child">
+                    <img src="./image/dia-img.png" alt="">
+                    <a href="/">Diabetes <i class="fa-sharp fa-regular fa-circle-right"></i></a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -388,16 +408,64 @@
                     mobility
                     equipment, and medication management.</p>
                 <p>View our large range of mobility aids and home health equipment for hire.</p>
+                <a href="/">More About Us</a>
             </div>
-
         </div>
     </div>
-
-
-
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <div class="query">
+        <div class="container">
+            <div class="contactinfo">
+                <div class="number">
+                    <img src="./image/caller.png" alt="">
+                    <div class="callnumner">
+                        <p>Speak to a Pharmacist</p>
+                        <a href="tel:07 3355 3052">07 3355 3052</a>
+                    </div>
+                </div>
+                <div class="number">
+                    <img src="./image/open.png" alt="">
+                    <div class="callnumner">
+                        <p>Open 7 day</p>
+                        <h4>Mon - Sat 7am to 8pm</h4>
+                    </div>
+                </div>
+                <div class="number">
+                    <img src="./image/maplogo.png" alt="">
+                    <div class="callnumber">
+                        <p>Our Location</p>
+                        <h4>621 Stafford Road, STAFFORD, QLD 4053, Australia</h4>
+                    </div>
+                </div>
+                <a class="viewmap" href="/">View On Maps</a>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="responsive-map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.7806761080233!2d-93.29138368446431!3d44.96844997909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b6ee2c87c91%3A0xc20dff2748d2bd92!2sWalker+Art+Center!5e0!3m2!1sen!2sus!4v1514524647889"
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div> -->
+    <div class="mainmap">
+        <img src="./image/mapimg.png" alt="">
+    </div>
+    <div class="container">
+        <div class="maindetails">
+            <div class="details">
+                <h1>Sign up for our Newsletter</h1>
+                <p>Sign up for exclusive email, special offers & latest news</p>
+            </div>
+            <form action="/">
+                <label for="fname"></label>
+                <input type="text" id="fname" placeholder="first Name">
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="Enter your email address...">
+                <button id="sub" type="submit">Subscribe <i class="fa-regular fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/a97145b659.js" crossorigin="anonymous"></script>
     <script>
@@ -445,6 +513,10 @@
                     .addClass("active")
                     .siblings()
                     .removeClass("active");
+            });
+            $(".view").click(function () {
+                $(".hide-conten").toggle(2000);
+                $(".hide-conten").css("display", "flex")
             });
         });
     </script>

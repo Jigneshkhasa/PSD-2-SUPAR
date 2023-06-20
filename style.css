@@ -117,14 +117,14 @@ select#cur {
 .instore,
 .online,
 .shopingon {
-    display: flex !important;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
 .uspslider {
-    display: flex !important;
+    display: flex;
     justify-content: space-between !important;
     align-items: center;
     padding: 10px 0;
@@ -416,6 +416,24 @@ select#shopall {
     height: 270px;
 }
 
+.hide-conten {
+    display: none;
+}
+
+button.view {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #adadad;
+    border: none;
+    background-color: transparent;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    cursor: pointer;
+}
+
 .service {
     background-color: #f9f9f9;
 }
@@ -454,7 +472,6 @@ select#shopall {
 .pharmasy h3 {
     font-size: 18px;
     padding: 5px;
-    /* line-height: 25px; */
 }
 
 .pharmasy h1 {
@@ -466,7 +483,6 @@ select#shopall {
 .pharmasy p {
     font-size: 16px;
     font-weight: 400;
-    /* line-height: 25px; */
     padding: 8px;
 }
 
@@ -477,6 +493,114 @@ select#shopall {
 
 .pharmasyplus {
     color: #7cb4da;
+    font-weight: 400;
+}
+
+.pharmasy a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: #0e66a1;
+    border: 1px solid #0e66a1;
+    padding: 13px;
+    display: inline-block;
+    margin-top: 35px;
+    font-size: 16px;
+    border-radius: 2px;
+}
+
+.pharmasy a:hover {
+    color: white;
+    background-color: #0e66a1;
+    border-radius: 10px;
+}
+
+.query {
+    background-color: #0973ba;
+}
+
+.contactinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number a {
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+}
+
+.number h4 {
+    color: white;
+}
+
+.number p {
+    font-size: 16px;
+    color: white;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 0;
+}
+
+.query :nth-child(4) {
+    text-decoration: none;
+    color: #0973ba;
+    padding: 10px 15px;
+    background-color: white;
+}
+
+.mainmap img {
+    display: flex;
+}
+
+.maindetails {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    background-color: #0973ba;
+    margin-top: 30px;
+    border-radius: 2px;
+}
+
+.details p,
+h1 {
+    padding-left: 34px;
+    color: white;
+}
+
+.details h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.details p {
+    font-size: 16px;
+}
+
+input#fname,
+input#email {
+    padding: 20px 120px 20px 20px;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+}
+
+input#fname {
+    margin: 35px;
+}
+
+button#sub {
+    padding: 20px 45px;
+    border-radius: 5px;
+    border: none;
+    align-items: end;
 }
 
 @media only screen and (max-width: 1023px) {
