@@ -90,6 +90,7 @@
     padding: 13px 45px 13px 5px;
     border: none;
     width: 428px;
+    border-radius: 5px;
 }
 
 .card {
@@ -200,7 +201,7 @@ select#cur {
 
 select#shopall {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     border: none;
     background-color: #2f84bd;
     padding: 16px 32px;
@@ -311,6 +312,10 @@ select#shopall {
     top: 30px;
     left: 142px;
     text-align: end;
+}
+
+.pro-img {
+    width: 100%;
 }
 
 .parent {
@@ -455,11 +460,32 @@ select#shopall {
     padding: 35px;
 }
 
-/* .addto {
+.addto {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 113px;
+}
+
+/* .crutch :hover .addto {
+    display: block;
 } */
+
+.addto a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    padding: 11px 14px;
+    background-color: #0973ba;
+    margin-left: 10px;
+}
+
+.addto img {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
 
 img.sale {
     position: absolute;
@@ -484,6 +510,7 @@ img.sale {
 
 .child img {
     width: 100%;
+    height: 200px;
 }
 
 .child {
@@ -680,10 +707,12 @@ input#fname,
 input#email {
     font-family: 'Roboto', sans-serif;
     font-style: italic;
-    padding: 20px 120px 20px 20px;
+    font-size: 16px;
+    padding: 18px;
     background-color: #f4f4f4;
     border: none;
     border-radius: 5px;
+    width: 370px;
 }
 
 button#sub {
@@ -705,13 +734,13 @@ form {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 10px;
 }
 
 .footer {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0 20px 40px;
+    padding: 20px 10px 20px 40px;
 }
 
 .quick h1 {
@@ -739,7 +768,7 @@ form {
 }
 
 .media img {
-    padding: 10px 6px;
+    padding: 10px 9px;
 }
 
 .payment img {
@@ -749,8 +778,8 @@ form {
     width: 62px;
 }
 
-.payment p {
-    padding: 20px 0;
+.connect:first-child p {
+    color: #0973ba;
 }
 
 .vaified img {
@@ -783,11 +812,30 @@ form {
     }
 
     .search input[type="search"] {
-        padding: 13px 170px 13px 5px;
+        padding: 13px 40px 13px 5px;
+        width: 300px;
+    }
+
+    .navbar ul {
+        gap: 30px;
+    }
+
+    .navbar ul li,
+    select#shopall {
+        font-size: 15px;
     }
 
     .slide-describtion h1 {
         font-size: 60px;
+    }
+
+    .uspslider p {
+        font-size: 15px;
+    }
+
+    input#fname,
+    input#email {
+        width: 260px;
     }
 }
 
@@ -807,5 +855,247 @@ form {
 
     .outer img {
         padding: 15px 0;
+    }
+
+    .slide-describtion h1 {
+        font-size: 41px;
+    }
+
+    .moreinfo {
+        padding: 11px 20px;
+        font-size: 19px;
+    }
+
+    .slide-describtion p {
+        font-size: 20px;
+    }
+
+    .parenthood {
+        top: 9px;
+        left: 67px;
+    }
+
+    .parent {
+        top: 7px;
+        left: 14px;
+    }
+
+    .dia,
+    .vit {
+        top: 11px;
+        left: 50px;
+    }
+
+    .parenthood h1,
+    .dia h1,
+    .parent h1,
+    .vit h1 {
+        font-size: 18px;
+    }
+
+    .product {
+        gap: 10px;
+    }
+
+    .two-row {
+        gap: 10px;
+    }
+
+    .mobileheader {
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .child {
+        height: 257px;
+    }
+
+    .child a {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .slide-describtion h1 {
+        font-size: 27px;
+    }
+
+    .instore {
+        display: grid;
+
+    }
+
+    .product {
+        display: grid;
+        justify-content: center;
+        padding-bottom: 60px;
+    }
+
+    .nav a {
+        font-size: 20px;
+    }
+
+    .nav a:first-child::before,
+    .nav a:last-child::after {
+        width: 50px;
+    }
+
+    .child img {
+        width: fit-content;
+    }
+
+    .child {
+        width: fit-content;
+    }
+
+    .costumer {
+        display: grid;
+    }
+
+    .pharmasy {
+        padding: 0px 0 32px 0;
+        text-align: center;
+    }
+
+    .pharmasy h1 {
+        font-size: 43px;
+        padding-bottom: 14px;
+    }
+
+    .pharmasy h3 {
+        font-size: 24px;
+    }
+
+    .pharmasy p {
+        font-size: 19px;
+    }
+
+    .first-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px
+    }
+
+    .maindetails {
+        display: grid;
+        text-align: center;
+        border-radius: 3px;
+        padding: 19px 0;
+    }
+
+    .query :nth-child(4) {
+        display: none;
+    }
+
+    .number h4 {
+        font-size: 12px;
+    }
+
+    .number a {
+        font-size: 17px;
+    }
+
+    .number p {
+        font-size: 12px;
+    }
+
+    .navbar ul {
+        gap: 22px;
+    }
+
+    select#shopall {
+        padding: 12px 14px;
+    }
+
+    .navbar ul li,
+    select#shopall {
+        font-size: 12px;
+    }
+
+    .hire span,
+    .instore span,
+    .online span,
+    .shopingon span {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .uspslider p {
+        font-size: 12px;
+    }
+
+    .slide-describtion p {
+        font-size: 18px;
+        width: 75%;
+    }
+
+    .parenthood {
+        top: 35px;
+        left: 160px;
+    }
+
+    .dia,
+    .vit {
+        top: 44px;
+        left: 158px;
+    }
+
+    .parent {
+        top: 34px;
+        left: 27px;
+    }
+
+    .parenthood h1,
+    .dia h1,
+    .parent h1,
+    .vit h1 {
+        font-size: 22px;
+        padding-bottom: 6px;
+    }
+
+    .service p::before,
+    .service p::after,
+    .brands p::after,
+    .brands p::before {
+        margin: 18px 5px;
+    }
+
+    .service p,
+    .brands p {
+        font-size: 45px;
+    }
+
+    form {
+        display: grid;
+        justify-content: center;
+    }
+
+    input#fname,
+    input#email {
+        width: 500px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .media,
+    .payment p {
+        text-align: center;
+    }
+
+    .payment {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .vaified {
+        justify-content: space-between;
+    }
+
+    .connect p {
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 20px;
     }
 }
