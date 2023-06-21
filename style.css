@@ -15,10 +15,15 @@
     src: local('Myriad Pro Regular'), url('./font/MYRIADPRO-REGULAR.woff') format('woff');
 }
 
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    transition: 1s all;
 }
 
 .container {
@@ -133,6 +138,19 @@ select#cur {
     display: none;
 }
 
+i.fa-solid.fa-bars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #0b73ba;
+}
+
+.hide-item {
+    display: none;
+    background-color: #fbf252;
+}
+
 .hire {
     font-family: 'Myriad Pro Regular';
 }
@@ -159,6 +177,10 @@ select#cur {
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+.first-row {
+    display: contents;
 }
 
 .uspslider p {
@@ -300,10 +322,17 @@ select#shopall {
     text-decoration: none;
     color: #0973ba;
     display: inline-flex;
-    justify-content: center;
     align-items: center;
     font-size: 15px;
     font-weight: 500;
+    gap: 6px;
+}
+
+.parenthood a:hover,
+.dia a:hover,
+.parent a:hover,
+.vit a:hover {
+    color: red;
 }
 
 .dia,
@@ -313,6 +342,7 @@ select#shopall {
     left: 142px;
     text-align: end;
 }
+
 
 .pro-img {
     width: 100%;
@@ -399,7 +429,7 @@ select#shopall {
     color: black;
 }
 
-*/ .tab_content {
+.tab_content {
     padding: 40px 80px;
 }
 
@@ -460,17 +490,24 @@ select#shopall {
     padding: 35px;
 }
 
+.cardimag {
+    position: relative;
+}
+
 .addto {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 113px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
 
-/* .crutch :hover .addto {
-    display: block;
-} */
+.crutch:hover .addto {
+    display: flex;
+}
 
 .addto a {
     text-decoration: none;
@@ -568,6 +605,23 @@ button.view {
     outline-offset: 15px;
 }
 
+/* Slick CSS for brands */
+.slick-prev,
+.slick-next {
+    color: #d3d3d3 !important;
+    background: #d3d3d3 !important;
+}
+
+.slick-next {
+    right: -27px !important;
+    top: 0 !important;
+}
+
+.slick-prev {
+    right: 4px !important;
+    top: -11px !important;
+}
+
 .costumer {
     display: flex;
     gap: 40px;
@@ -617,13 +671,13 @@ button.view {
     margin-top: 35px;
     font-size: 16px;
     border-radius: 2px;
+
 }
 
 .pharmasy a:hover {
     color: white;
     background-color: #0e66a1;
     border-radius: 10px;
-    transition: 1s;
 }
 
 .query {
@@ -844,6 +898,38 @@ form {
         display: none;
     }
 
+    .navbar {
+        display: none;
+    }
+
+    .mobile-navbar {
+        padding: 25px;
+        background-color: #0973ba;
+        border-radius: 0 0 30% 30%;
+    }
+
+    .mobile-navbar ul li {
+
+        list-style-type: none;
+    }
+
+    .mobile-navbar ul a {
+        text-decoration: none;
+    }
+
+    .mobile-navbar ul li {
+        color: white;
+    }
+
+    .mobile-navbar ul {
+        padding: 0px 30px;
+    }
+
+    .items {
+        display: grid;
+        padding: 25px;
+    }
+
     .mobileheader {
         display: flex;
         justify-content: space-between;
@@ -922,7 +1008,6 @@ form {
 
     .instore {
         display: grid;
-
     }
 
     .product {
@@ -1065,7 +1150,7 @@ form {
         font-size: 45px;
     }
 
-    form {
+    .navbar form {
         display: grid;
         justify-content: center;
     }
@@ -1098,4 +1183,15 @@ form {
         padding-bottom: 20px;
         font-size: 20px;
     }
+
+    .hide-item {
+        justify-content: start;
+        padding-bottom: 22px;
+        gap: 20px;
+    }
+
+    /* .call,
+    .myaccount {
+        border: none;
+    } */
 }
