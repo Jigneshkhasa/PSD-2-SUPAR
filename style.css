@@ -176,7 +176,8 @@ i.fa-solid.fa-bars {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    padding: 7px 0;
 }
 
 .first-row {
@@ -221,12 +222,16 @@ i.fa-solid.fa-bars {
     font-size: 16px;
 }
 
+.shop {
+    background-color: #2f84bd;
+    padding: 16px 32px;
+}
+
 select#shopall {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     border: none;
     background-color: #2f84bd;
-    padding: 16px 32px;
     color: white;
     font-size: 18px;
 }
@@ -281,6 +286,11 @@ select#shopall {
     justify-content: center;
     align-items: center;
     width: fit-content;
+    transition: 0.5s all;
+}
+
+.moreinfo:hover {
+    box-shadow: 0 0 5px 5px rgb(153, 54, 54);
 }
 
 .equipment,
@@ -471,6 +481,7 @@ select#shopall {
     font-size: 30px;
     font-weight: 400;
     padding: 20px 0;
+    color: #d6d5d5;
 }
 
 
@@ -547,6 +558,10 @@ img.sale {
     z-index: 1;
 }
 
+.child img {
+    width: 100%;
+}
+
 .child a {
     text-decoration: none;
     color: black;
@@ -579,15 +594,16 @@ button.view {
     color: #adadad;
     border: none;
     background-color: transparent;
-    padding-bottom: 20px;
     display: flex;
     justify-content: end;
     width: 100%;
     cursor: pointer;
+    padding: 20PX;
 }
 
 .service {
     background-color: #f9f9f9;
+    padding: 0 0 60px 0;
 }
 
 .service p,
@@ -596,7 +612,7 @@ button.view {
     font-family: 'Ubuntu', sans-serif;
     font-size: 24px;
     font-weight: 400;
-    padding: 50px;
+    padding: 40px 40px 20px 40px
 }
 
 .service p::before,
@@ -611,27 +627,11 @@ button.view {
     margin: 6px 5px;
 }
 
-.brands img {
+/* .brands img {
     outline: 2px solid #ebebeb;
     outline-offset: 15px;
-}
-
-/* Slick CSS for start */
-/* .slick-prev,
-.slick-next {
-    color: #d3d3d3 !important;
-    background: #d3d3d3 !important;
-}
-
-.slick-next {
-    right: -27px !important;
-    top: 0 !important;
-}
-
-.slick-prev {
-    right: 4px !important;
-    top: -11px !important;
 } */
+
 .top-product-prev,
 .top-product-next {
     color: #cfcfcf;
@@ -657,6 +657,7 @@ button.view {
 .costumer {
     display: flex;
     gap: 40px;
+    padding: 70px 0;
 }
 
 .pharmasy h3 {
@@ -678,9 +679,9 @@ button.view {
     padding: 8px;
 }
 
-.costumer img {
+/* .costumer img {
     padding-bottom: 90px;
-}
+} */
 
 .pharmasy {
     padding-top: 65px;
@@ -703,6 +704,7 @@ button.view {
     margin-top: 35px;
     font-size: 16px;
     border-radius: 2px;
+    transition: 0.5s all;
 
 }
 
@@ -750,12 +752,13 @@ button.view {
     color: #0973ba;
     padding: 10px 15px;
     background-color: white;
+    transition: 1s all;
 }
 
 .query :nth-child(4):hover {
     color: white;
     background-color: #3683b6;
-    transition: 1s;
+
 }
 
 .mainmap img {
@@ -769,7 +772,7 @@ button.view {
     align-items: center;
     text-align: start;
     background-color: #0973ba;
-    margin: 30px 0;
+    margin: 30px 0 0 0;
     border-radius: 2px;
     padding: 35px 0;
 }
@@ -787,6 +790,15 @@ button.view {
 
 .details p {
     font-size: 16px;
+}
+
+.brandimg a {
+    padding: 10px;
+    margin: 0 -10px 0 0;
+}
+
+.brandimg img:hover {
+    border: 2px solid #0973ba;
 }
 
 input#fname,
@@ -824,17 +836,48 @@ form {
     gap: 10px;
 }
 
+.quick,
+.connect {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 40px 70px;
+}
+
+.quick {
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.connect {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.viewall {
+    text-decoration: none;
+    color: red;
+    margin: 0 0 0 -15px;
+
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
-    padding: 20px 10px 20px 40px;
 }
 
 .quick h1 {
+    margin: 0 0 0 -15px;
+}
+
+.quick h1,
+.forblue {
     font-size: 20px;
     font-weight: 500;
-    font-family: 'Myriad Pro Regular';
+    font-family: 'Ubuntu', sans-serif;
     color: #0973ba;
+}
+
+.forbold {
+    font-weight: bold;
 }
 
 .quick ul a {
@@ -842,8 +885,6 @@ form {
 }
 
 .quick ul li {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 15px;
     color: #666666;
     line-height: 35px;
@@ -855,7 +896,7 @@ form {
 }
 
 .media img {
-    padding: 10px 9px;
+    padding: 0px 6px;
 }
 
 .payment img {
@@ -893,10 +934,65 @@ form {
     color: #0e66a1;
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1440px) {
     .container {
         padding: 0 30px;
     }
+
+    .slide-describtion h1 {
+        font-size: 62px;
+    }
+
+    .product {
+        gap: 16px;
+    }
+
+    .first-row {
+        display: flex;
+        gap: 16px;
+    }
+
+    .parenthood {
+        left: 160px;
+    }
+
+    .details p {
+        font-size: 14px;
+    }
+
+    .details h1 {
+        font-size: 19px;
+        font-weight: bold;
+    }
+
+    .details p,
+    .details h1 {
+        padding-left: 10px;
+        color: white;
+    }
+
+    .parenthood {
+        left: 132px;
+        top: 25px;
+    }
+
+    .dia,
+    .vit {
+        top: 25px;
+        left: 123px;
+    }
+
+    .child {
+        height: 243px;
+    }
+
+    .quick,
+    .connect {
+        padding: 40px 49px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
 
     .search input[type="search"] {
         padding: 13px 40px 13px 5px;
@@ -923,6 +1019,43 @@ form {
     input#fname,
     input#email {
         width: 260px;
+    }
+
+    input#fname,
+    input#email {
+        width: 328px;
+    }
+}
+
+@media only screen and (max-width: 1280PX) {
+    .slide-describtion h1 {
+        font-size: 50px;
+    }
+
+    .parenthood {
+        left: 118px;
+        top: 9px;
+    }
+
+    .dia,
+    .vit {
+        top: 15px;
+        left: 103px;
+    }
+
+    .parent {
+        position: absolute;
+        top: 6px;
+        left: 12px;
+    }
+
+    input#fname,
+    input#email {
+        width: 275px;
+    }
+
+    .media img {
+        padding: 0px;
     }
 }
 

@@ -184,7 +184,7 @@
         <div class="container">
             <ul>
                 <li> <a href="/"></a>
-                    <form action="/">
+                    <form class="shop" action="/">
                         <select name="country" id="shopall">
                             <option value="option">Shop All</option>
                             <option value="option">option 2</option>
@@ -334,6 +334,7 @@
         </div>
         <div class="multitabs">
             <div class="nav">
+
                 <a class="tab-link active" data-tab="1">Featured</a>
                 <span class="arroy">/</span>
                 <a class="tab-link" data-tab="2">New Arrivals</a>
@@ -506,14 +507,14 @@
         <div class="brands">
             <p>Our Top Brands</p>
             <div class="brandimg">
-                <img src="./image/optifast.png" alt="">
-                <img src="./image/amcal.png" alt="">
-                <img src="./image/avent.png" alt="">
-                <img src="./image/omron.png" alt="">
-                <img src="./image/musashi.png" alt="">
-                <img src="./image/depend.png" alt="">
-                <img src="./image/omron.png" alt="">
-                <img src="./image/musashi.png" alt="">
+                <a href="/"><img src="./image/optifast.png" alt=""></a>
+                <a href="/"> <img src="./image/amcal.png" alt=""></a>
+                <a href="/"> <img src="./image/avent.png" alt=""></a>
+                <a href="/"> <img src="./image/omron.png" alt=""></a>
+                <a href="/"><img src="./image/musashi.png" alt=""></a>
+                <a href="/"><img src="./image/depend.png" alt=""></a>
+                <a href="/"><img src="./image/omron.png" alt=""></a>
+                <a href="/"><img src="./image/musashi.png" alt=""></a>
             </div>
         </div>
         <div class="costumer">
@@ -607,6 +608,7 @@
                         <li>Health information</li>
                     </a>
                 </ul>
+                <a class="viewall" href="/">Viel All</a>
             </div>
             <div class="quick">
                 <h1>Categories</h1>
@@ -636,6 +638,7 @@
                         <li>Quit</li>
                     </a>
                 </ul>
+                <a class="viewall" href="/">Viel All</a>
             </div>
             <div class="quick">
                 <h1>Customer Help</h1>
@@ -670,7 +673,7 @@
                 </ul>
             </div>
             <div class="connect">
-                <p>Connect With Us</p>
+                <p class="forblue">Connect With Us</p>
                 <div class="media">
                     <a href="/"><img src="./image/fb-copy.png" alt=""></a>
                     <a href="/"><img src="./image/twr-copy.png" alt=""></a>
@@ -679,7 +682,7 @@
                     <a href="/"><img src="./image/call-copy.png" alt=""></a>
                     <a href="/"><img src="./image/caht-with-us.png" alt=""></a>
                 </div>
-                <p>Payment Method</p>
+                <p> <span class="forbold">Payment</span> Method</p>
                 <div class="payment">
                     <a href="/"> <img src="./image/paypal.png" alt=""></a>
                     <a href="/"> <img src="./image/mastercard.png" alt=""></a>
@@ -771,12 +774,19 @@
             });
             $('.brandimg').slick({
                 speed: 300,
-                slidesToShow: 4,
+                slidesToShow: 6,
                 slidesToScroll: 2,
                 arrows: true,
                 prevArrow: '<i class="fa-solid fa-angle-left top-product-prev"></i>',
                 nextArrow: '<i class="fa-solid fa-angle-right top-product-next"></i>',
                 responsive: [
+                    {
+                        breakpoint: 1440,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1
+                        }
+                    },
                     {
                         breakpoint: 768,
                         settings: {
