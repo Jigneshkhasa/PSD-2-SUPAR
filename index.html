@@ -98,30 +98,20 @@
                     <p>Call Between 7am-8pm</p>
                 </div>
             </div>
-            <div class="myaccount">
-                <img src="./image/my account.png" alt="">
-                <form action="/">
-                    <select name="accountmy" id="cur">
-                        <option value="My accoumt">My account</option>
-                        <option value="Card">Card</option>
-                        <option value="Other">Other</option>
-                        <option value="Contack">Contack</option>
-                    </select>
-                </form>
-            </div>
+
         </div>
         <div class="mobile-navbar">
             <ul>
-                <li>
-                    <form action="/">
-                        <select name="country" id="shopall">
-                            <option value="option">Shop All</option>
-                            <option value="option">option 2</option>
-                            <option value="option">option 5</option>
-                            <option value="option">option 4</option>
-                        </select>
-                    </form>
-                </li>
+
+                <form action="/">
+                    <select name="country" id="shopall">
+                        <option value="option">Shop All</option>
+                        <option value="option">option 2</option>
+                        <option value="option">option 5</option>
+                        <option value="option">option 4</option>
+                    </select>
+                </form>
+
                 <a href="/">
                     <li>Health Equipment</li>
                 </a>
@@ -147,6 +137,17 @@
                     <li>Sport</li>
                 </a>
             </ul>
+            <div class="myaccount">
+                <img src="./image/my account.png" alt="">
+                <form action="/">
+                    <select name="accountmy" id="curu" class="account">
+                        <option value="My accoumt">My account</option>
+                        <option value="Card">Card</option>
+                        <option value="Other">Other</option>
+                        <option value="Contack">Contack</option>
+                    </select>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -705,6 +706,16 @@
     <script src="https://kit.fontawesome.com/a97145b659.js" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
+            $(".nav a").click(function () {
+                console.log("click");
+                var tabID = $(this).attr("data-tab");
+                $(this).addClass("active").siblings().removeClass("active");
+                $("#tab-" + tabID)
+                    .addClass("active")
+                    .siblings()
+                    .removeClass("active");
+            });
+
             $('.mainslider').slick({
                 arrows: false
             });
@@ -714,32 +725,34 @@
                 arrows: false,
                 responsive: [
                     {
-                        breakpoint: 1366,
+                        breakpoint: 600,
                         settings: {
-                            slidesToShow: 3,
+                            slidesToShow: 1,
                             slidesToScroll: 1
                         }
-                    },
-                    {
+                    }, {
                         breakpoint: 768,
                         settings: {
                             slidesToShow: 2,
                             slidesToScroll: 1
                         }
-                    },
-                    {
-                        breakpoint: 425,
+                    }, {
+                        breakpoint: 1366,
                         settings: {
-                            slidesToShow: 1,
+                            slidesToShow: 3,
                             slidesToScroll: 1
                         }
                     }
+
+
                 ]
             });
             $('.feachered').slick({
                 speed: 300,
                 slidesToShow: 5,
                 slidesToScroll: 1,
+                prevArrow: '<i class="fa-solid fa-angle-left top-product-prev"></i>',
+                nextArrow: '<i class="fa-solid fa-angle-right top-product-next"></i>',
                 responsive: [
                     {
                         breakpoint: 768,
@@ -761,6 +774,8 @@
                 slidesToShow: 4,
                 slidesToScroll: 2,
                 arrows: true,
+                prevArrow: '<i class="fa-solid fa-angle-left top-product-prev"></i>',
+                nextArrow: '<i class="fa-solid fa-angle-right top-product-next"></i>',
                 responsive: [
                     {
                         breakpoint: 768,
@@ -777,21 +792,17 @@
                         }
                     }]
             });
-            $("nav a").click(function () {
-                var tabID = $(this).attr("data-tab");
-                $(this).addClass("active").siblings().removeClass("active");
-                $("#tab-" + tabID)
-                    .addClass("active")
-                    .siblings()
-                    .removeClass("active");
-            });
+
+
+
             $(".view").click(function () {
                 $(".hide-conten").slideToggle();
                 $(".hide-conten").css("display", "flex")
             });
+
             $(".fa-bars").click(function () {
                 $(".hide-item").slideToggle("slow");
-                $(".hide-item").css("display", "flex")
+                $(".hide-item").css("display", "grid")
             });
         });
         // console.log("AllDone");

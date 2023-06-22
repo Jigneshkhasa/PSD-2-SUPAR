@@ -174,7 +174,7 @@ i.fa-solid.fa-bars {
 
 .instore {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
@@ -404,6 +404,10 @@ select#shopall {
     text-align: center;
 }
 
+.tab-link.active {
+    color: #0973ba;
+}
+
 .nav a:first-child::before,
 .nav a:last-child::after {
     content: "";
@@ -430,7 +434,7 @@ select#shopall {
 }
 
 .tab_content {
-    padding: 40px 80px;
+    padding: 40px 0px;
 }
 
 .redb {
@@ -471,7 +475,6 @@ select#shopall {
 
 
 .crutch img {
-    border: 1px solid #f3f3f3;
     padding: 35px 80px;
     width: 278px;
     height: 278px;
@@ -492,6 +495,11 @@ select#shopall {
 
 .cardimag {
     position: relative;
+    border: 1px solid #f3f3f3;
+}
+
+.cardimag:hover {
+    background-color: #f6f6f6;
 }
 
 .addto {
@@ -505,8 +513,16 @@ select#shopall {
     width: 100%;
 }
 
+.crutch {
+    margin: 7px;
+}
+
 .crutch:hover .addto {
     display: flex;
+}
+
+.feachered {
+    margin: -7px;
 }
 
 .addto a {
@@ -543,11 +559,6 @@ img.sale {
 
 .fa-circle-right {
     color: #0973ba;
-}
-
-.child img {
-    width: 100%;
-    height: 200px;
 }
 
 .child {
@@ -605,8 +616,8 @@ button.view {
     outline-offset: 15px;
 }
 
-/* Slick CSS for brands */
-.slick-prev,
+/* Slick CSS for start */
+/* .slick-prev,
 .slick-next {
     color: #d3d3d3 !important;
     background: #d3d3d3 !important;
@@ -620,7 +631,28 @@ button.view {
 .slick-prev {
     right: 4px !important;
     top: -11px !important;
+} */
+.top-product-prev,
+.top-product-next {
+    color: #cfcfcf;
+    border: 1px solid #cfcfcf;
+    padding: 5px 7px;
+    border-radius: 50%;
+    font-size: 12px;
+    cursor: pointer;
+    position: absolute;
+    top: -30px;
 }
+
+.top-product-prev {
+    right: 30px;
+}
+
+.top-product-next {
+    right: 0;
+}
+
+/* Slick CSS for end */
 
 .costumer {
     display: flex;
@@ -777,11 +809,12 @@ button#sub {
     color: white;
     background-color: #ed2328;
     cursor: pointer;
+    transition: 1s all;
 }
 
 button#sub:hover {
     background-color: #2f84bd;
-    transition: 1s;
+
 }
 
 form {
@@ -919,10 +952,30 @@ form {
 
     .mobile-navbar ul li {
         color: white;
+        padding: 4px;
     }
 
-    .mobile-navbar ul {
+    .mobile-navbar ul li:hover {
+        color: black;
+        background-color: azure;
+    }
+
+    .mobile-navbar ul,
+    .myaccount {
         padding: 0px 30px;
+        text-align: center;
+    }
+
+    .search input[type="search"] {
+        padding: 15px 55px 15px 5px;
+        width: 538px;
+        font-size: 20px;
+    }
+
+    .search button {
+        padding: 14px;
+        right: 8px;
+        top: 6px;
     }
 
     .items {
@@ -992,12 +1045,43 @@ form {
         gap: 80px;
     }
 
+    .instore {
+        flex-wrap: wrap;
+    }
+
     .child {
         height: 257px;
     }
 
     .child a {
         font-size: 17px;
+    }
+
+    .maindetails {
+        display: grid;
+        text-align: center;
+    }
+
+    form {
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-top: 25px;
+    }
+
+    select#shopall,
+    select#curu {
+        background-color: #0973ba;
+        color: white;
+        border: none;
+    }
+
+    .myaccount {
+        justify-content: center;
+    }
+
+    .myaccount img {
+        display: none;
     }
 }
 
@@ -1068,9 +1152,9 @@ form {
         padding: 19px 0;
     }
 
-    .query :nth-child(4) {
+    /* .query :nth-child(4) {
         display: none;
-    }
+    } */
 
     .number h4 {
         font-size: 12px;
@@ -1155,6 +1239,12 @@ form {
         justify-content: center;
     }
 
+    form {
+        display: grid;
+        justify-content: center;
+        padding: 0;
+    }
+
     input#fname,
     input#email {
         width: 500px;
@@ -1185,13 +1275,92 @@ form {
     }
 
     .hide-item {
-        justify-content: start;
+        justify-content: center;
         padding-bottom: 22px;
-        gap: 20px;
     }
 
-    /* .call,
+    .crutch :nth-child(3) {
+        padding: 17px;
+    }
+
+    .crutch img {
+        width: 223px;
+        height: 203px;
+    }
+
+    .addto img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .call,
     .myaccount {
         border: none;
-    } */
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .mobileheader {
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+    .outer img {
+        padding: 15px 0;
+        width: 55%;
+    }
+
+    .search input[type="search"] {
+        width: 370px;
+    }
+
+    .slide-describtion h1 {
+        font-size: 17px;
+    }
+
+    .slide-describtion p {
+        font-size: 12px;
+        width: 50%;
+    }
+
+    .slide-describtion p {
+        padding: 10px 0;
+    }
+
+    .australia h5 {
+        padding: 0px 4px;
+    }
+
+    select#cur,
+    .aud p {
+        font-size: 12px;
+    }
+
+    .moreinfo {
+        padding: 4px 5px;
+        font-size: 12px;
+    }
+
+    a.moreinfo img {
+        width: 13px;
+        height: 11px;
+    }
+
+    .moreinfo {
+        padding: 4px 5px;
+        font-size: 12px;
+    }
+
+    .slide-describtion img {
+        padding-left: 4px;
+    }
+
+    .first-row {
+        display: grid;
+        gap: 10px;
+    }
 }
