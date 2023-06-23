@@ -336,6 +336,7 @@ select#shopall {
     font-size: 15px;
     font-weight: 500;
     gap: 6px;
+    transition: 0.5s all;
 }
 
 .parenthood a:hover,
@@ -573,6 +574,11 @@ img.sale {
     font-weight: bold;
     padding: 10px;
     display: block;
+    transition: 0.5s all;
+}
+
+.child a:hover {
+    color: #0973ba;
 }
 
 .fa-circle-right {
@@ -902,6 +908,10 @@ form {
     line-height: 35px;
 }
 
+.quick ul li:hover {
+    color: #0973ba;
+}
+
 .media {
     padding-bottom: 40px;
 }
@@ -916,6 +926,11 @@ form {
 
 .media img {
     padding: 0px 6px;
+}
+
+.media img:hover,
+.payment img:hover {
+    box-shadow: 0 0 11px rgb(133, 132, 105);
 }
 
 .payment img {
@@ -1091,6 +1106,12 @@ form {
 
     .header {
         gap: 10px;
+        padding: 15px 0;
+    }
+
+    input#fname,
+    input#email {
+        padding: 12px;
     }
 
     .search input[type="search"] {
@@ -1231,7 +1252,7 @@ form {
     }
 
     button#sub {
-        padding: 16px 27px;
+        padding: 11px 27px;
         font-size: 15px;
     }
 
