@@ -1301,6 +1301,21 @@ form {
         display: none;
     }
 
+    .search {
+        display: flex;
+        justify-content: center;
+    }
+
+    .search button {
+        right: 114px;
+        top: 5px;
+    }
+
+    .myaccount,
+    .call {
+        padding: 20px 0 0 0;
+    }
+
     .navbar {
         display: none;
     }
@@ -1332,20 +1347,18 @@ form {
 
     .mobile-navbar ul,
     .myaccount {
-        padding: 0px 30px;
         text-align: center;
+    }
+
+    .call,
+    .myaccount {
+        border-right: none;
     }
 
     .search input[type="search"] {
         padding: 15px 55px 15px 5px;
         width: 538px;
-        font-size: 20px;
-    }
-
-    .search button {
-        padding: 14px;
-        right: 8px;
-        top: 6px;
+        font-size: 17px;
     }
 
     .items {
@@ -1371,7 +1384,7 @@ form {
     }
 
     .australia h5 {
-        bottom: 37px;
+        bottom: 26px;
     }
 
     .moreinfo {
@@ -1527,6 +1540,30 @@ form {
         font-size: 22px;
         padding: 10px 0 20px 0;
     }
+
+    .service p,
+    .brands p {
+        padding: 27px 40px 30px 40px;
+    }
+
+    .contactinfo {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .number {
+        flex: 0 50%;
+    }
+
+    .footer {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .quick {
+        padding: 40px 30px;
+        flex: 0 33%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1540,7 +1577,7 @@ form {
     }
 
     .product {
-        display: grid;
+        display: flex;
         justify-content: center;
         padding-bottom: 60px;
     }
@@ -1561,44 +1598,6 @@ form {
     .child {
         width: fit-content;
     }
-
-
-    /* 
-    .pharmasy {
-        padding: 0px 0 32px 0;
-        text-align: center;
-    }
-
-    .pharmasy h1 {
-        font-size: 43px;
-        padding-bottom: 14px;
-    }
-
-    .pharmasy h3 {
-        font-size: 24px;
-    }
-
-    .pharmasy p {
-        font-size: 19px;
-    } */
-
-    /* 
-    .first-row {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px
-    }
-
-    .maindetails {
-        display: grid;
-        text-align: center;
-        border-radius: 3px;
-        padding: 19px 0;
-    } */
-
-    /* .query :nth-child(4) {
-        display: none;
-    } */
 
     .number h5 {
         font-size: 12px;
@@ -1675,20 +1674,13 @@ form {
 
     .service p,
     .brands p {
-        font-size: 45px;
+        font-size: 33px;
     }
 
     .navbar form {
         display: grid;
         justify-content: center;
     }
-
-    /* 
-    form {
-        display: grid;
-        justify-content: center;
-        padding: 0;
-    } */
 
     input#fname,
     input#email {
@@ -1697,7 +1689,6 @@ form {
 
     .footer {
         flex-wrap: wrap;
-        flex-direction: column;
         align-items: center;
         border-right: none;
     }
@@ -1810,5 +1801,112 @@ form {
     .first-row {
         display: grid;
         gap: 10px;
+    }
+
+    .crutch :nth-child(3) {
+        padding: 26px;
+    }
+
+    .product {
+        display: grid;
+    }
+
+    .addto a {
+        font-size: 13px;
+        padding: 11px 14px;
+        margin-left: 5px;
+    }
+
+    .crutch p {
+        font-size: 12px;
+    }
+
+    .service p,
+    .brands p {
+        font-size: 21px;
+    }
+
+    .service p::before,
+    .service p::after,
+    .brands p::after,
+    .brands p::before {
+        margin: 5px 5px;
+        width: 49px;
+    }
+
+    .pharmasy h1 {
+        font-size: 24px;
+    }
+
+    .pharmasy h3 {
+        font-size: 16px;
+    }
+
+    .pharmasy p {
+        font-size: 12px;
+    }
+
+    .pharmasy a {
+        padding: 7px;
+        font-size: 11px;
+    }
+
+    .pharmasy a {
+        padding: 7px;
+        font-size: 11px;
+    }
+
+    .pharmasy {
+        padding: 0;
+    }
+
+    .costumer {
+        padding: 23px 0;
+    }
+
+    input#fname,
+    input#email {
+        width: 325px;
+    }
+
+    .details p {
+        font-size: 16px;
+    }
+
+    .details h1 {
+        font-size: 23px;
+    }
+
+    .quick {
+        justify-content: center;
+        display: grid;
+    }
+
+    .footer {
+        display: grid;
+    }
+
+    .nav a:first-child::before,
+    .nav a:last-child::after {
+        width: 28px;
+    }
+
+    .nav a {
+        font-size: 12px;
+    }
+
+    .nav a:first-child::before,
+    .nav a:last-child::after {
+        width: 28px;
+    }
+
+    .nav a {
+        margin-right: 0;
+        padding: 0px;
+    }
+
+    .nav a:first-child::before,
+    .nav a:last-child::after {
+        margin: 2px 15px;
     }
 }
