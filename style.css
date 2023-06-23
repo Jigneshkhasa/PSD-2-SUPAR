@@ -354,7 +354,6 @@ select#shopall {
     text-align: end;
 }
 
-
 .pro-img {
     width: 100%;
 }
@@ -484,7 +483,6 @@ select#shopall {
     padding: 20px 0;
     color: #d6d5d5;
 }
-
 
 .crutch img {
     padding: 35px 80px;
@@ -734,6 +732,7 @@ button.view {
     text-decoration: none;
     font-size: 28px;
     color: white;
+    font-weight: 500;
 }
 
 .number h5 {
@@ -742,7 +741,7 @@ button.view {
 
 .number p {
     font-size: 16px;
-    color: white;
+    color: #eeeeee;
 }
 
 .number {
@@ -818,7 +817,7 @@ input#fname,
 input#email {
     font-family: 'Roboto', sans-serif;
     font-style: italic;
-    font-size: 14px;
+    font-size: 16px;
     padding: 18px;
     background-color: #f4f4f4;
     border: none;
@@ -928,7 +927,7 @@ form {
     padding: 0px 6px;
 }
 
-.media img:hover,
+/* .media img:hover, */
 .payment img:hover {
     box-shadow: 0 0 11px rgb(133, 132, 105);
 }
@@ -1002,7 +1001,6 @@ form {
     .details p,
     .details h1 {
         padding-left: 10px;
-        color: white;
     }
 
     .parenthood {
