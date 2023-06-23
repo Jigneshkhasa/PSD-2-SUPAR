@@ -371,7 +371,7 @@ select#shopall {
 .product {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 20px 0 65px 0
 }
 
 .two-row {
@@ -495,13 +495,16 @@ select#shopall {
 .crutch p {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     height: 40px;
+    padding: 20px 0 0 0;
 }
 
 .crutch :nth-child(3) {
+    font-family: 'Roboto', sans-serif;
     color: #0973ba;
     padding: 35px;
+    font-weight: bold;
 }
 
 .cardimag {
@@ -611,7 +614,7 @@ button.view {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 40px 40px 20px 40px
 }
 
@@ -679,10 +682,6 @@ button.view {
     padding: 8px;
 }
 
-/* .costumer img {
-    padding-bottom: 90px;
-} */
-
 .pharmasy {
     padding-top: 65px;
     font-family: 'Roboto', sans-serif;
@@ -716,6 +715,7 @@ button.view {
 
 .query {
     background-color: #0973ba;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .contactinfo {
@@ -730,7 +730,7 @@ button.view {
     color: white;
 }
 
-.number h4 {
+.number h5 {
     color: white;
 }
 
@@ -750,6 +750,8 @@ button.view {
 .query :nth-child(4) {
     text-decoration: none;
     color: #0973ba;
+    font-size: 18px;
+    font-weight: 500;
     padding: 10px 15px;
     background-color: white;
     transition: 1s all;
@@ -790,11 +792,16 @@ button.view {
 
 .details p {
     font-size: 16px;
+    color: #badef6;
 }
 
 .brandimg a {
     padding: 10px;
     margin: 0 -10px 0 0;
+}
+
+.brandimg img {
+    border: 2px solid transparent;
 }
 
 .brandimg img:hover {
@@ -805,7 +812,7 @@ input#fname,
 input#email {
     font-family: 'Roboto', sans-serif;
     font-style: italic;
-    font-size: 16px;
+    font-size: 14px;
     padding: 18px;
     background-color: #f4f4f4;
     border: none;
@@ -861,7 +868,6 @@ form {
 
 .footer {
     display: flex;
-    justify-content: space-between;
 }
 
 .quick h1 {
@@ -874,6 +880,7 @@ form {
     font-weight: 500;
     font-family: 'Ubuntu', sans-serif;
     color: #0973ba;
+    padding-bottom: 10px;
 }
 
 .forbold {
@@ -884,15 +891,27 @@ form {
     text-decoration: none;
 }
 
+.connect p {
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
 .quick ul li {
     font-size: 15px;
     color: #666666;
     line-height: 35px;
 }
 
-.connect {
-    display: grid;
-    justify-content: space-between;
+.media {
+    padding-bottom: 40px;
+}
+
+.payment {
+    padding-bottom: 65px;
+}
+
+.payment a {
+    padding-right: 5px;
 }
 
 .media img {
@@ -1025,6 +1044,10 @@ form {
     input#email {
         width: 328px;
     }
+
+    .header a img {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 1280PX) {
@@ -1057,9 +1080,223 @@ form {
     .media img {
         padding: 0px;
     }
+
+
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024PX) {
+    .header a {
+        width: 30%;
+    }
+
+    .header {
+        gap: 10px;
+    }
+
+    .search input[type="search"] {
+        width: 225px;
+    }
+
+    .call img,
+    .myaccount img {
+        width: 20px;
+    }
+
+    .callnumber a {
+        font-size: 16PX;
+    }
+
+    select#cur {
+        font-size: 13px;
+    }
+
+    .shop {
+        padding: 12px 25px;
+    }
+
+    .slide-describtion h1 {
+        font-size: 45px;
+    }
+
+    .slide-describtion p {
+        font-size: 23px;
+        padding: 25px 0;
+    }
+
+    .moreinfo {
+        padding: 12px 19px;
+        font-size: 18px;
+    }
+
+    .parenthood {
+        left: 55px;
+        top: 9px;
+    }
+
+    .dia,
+    .vit {
+        top: 15px;
+        left: 40px;
+    }
+
+    .parenthood h1,
+    .dia h1,
+    .parent h1,
+    .vit h1 {
+        font-size: 15px;
+    }
+
+    .parenthood p,
+    .dia p,
+    .parent p,
+    .vit p {
+        font-size: 12px;
+        padding-bottom: 7px;
+    }
+
+    .parenthood a,
+    .dia a,
+    .parent a,
+    .vit a {
+        font-size: 12px;
+    }
+
+    .nav a {
+        font-size: 17px;
+    }
+
+    .service p,
+    .brands p {
+        font-size: 21px;
+        padding: 27px 40px 10px 40px
+    }
+
+    button.view {
+        padding: 10PX;
+    }
+
+    .child a {
+        font-size: 15px;
+    }
+
+    .child {
+        height: 189px;
+    }
+
+    .crutch p {
+        font-size: 13px;
+    }
+
+    .costumer img {
+        width: 50%;
+    }
+
+    .pharmasy h1 {
+        font-size: 22px;
+    }
+
+    .pharmasy h3 {
+        font-size: 14px;
+    }
+
+    .pharmasy p {
+        font-size: 12px;
+    }
+
+    .pharmasy a {
+        padding: 9px;
+        font-size: 14px;
+    }
+
+    .number p {
+        font-size: 13px;
+    }
+
+    .number a {
+        font-size: 22px;
+    }
+
+    .number h5 {
+        font-size: 12px;
+    }
+
+    .query :nth-child(4) {
+        font-size: 14px;
+    }
+
+    input#fname,
+    input#email {
+        width: 200px;
+        font-size: 12px;
+    }
+
+    button#sub {
+        padding: 16px 27px;
+        font-size: 15px;
+    }
+
+    .details h1 {
+        font-size: 15px;
+    }
+
+    .details p {
+        font-size: 12px;
+    }
+
+    .quick h1,
+    .forblue,
+    .connect p {
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+
+    .quick ul li {
+        font-size: 14px;
+        color: #666666;
+        line-height: 28px;
+    }
+
+    .quick {
+        padding: 40px 10px;
+    }
+
+    .connect {
+        padding: 40px 30px;
+    }
+
+    .footer {
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .myaccount,
+    .call {
+        padding-right: 10px;
+    }
+
+    .product {
+        padding: 20px 0 35px 0;
+    }
+
+    .costumer {
+        padding: 50px 0;
+    }
+
+    .maindetails {
+        justify-content: center;
+    }
+
+    .payment {
+        padding-bottom: 50px;
+    }
+
+    .australia h5 {
+        padding: 0px 4px;
+        right: 57px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
     .header {
         display: none;
     }
@@ -1130,16 +1367,26 @@ form {
     }
 
     .slide-describtion h1 {
-        font-size: 41px;
+        font-size: 25px;
+    }
+
+    .australia h5 {
+        bottom: 37px;
     }
 
     .moreinfo {
-        padding: 11px 20px;
-        font-size: 19px;
+        padding: 8px 11px;
+        font-size: 14px;
+    }
+
+    .slide-describtion img {
+        width: 21px;
+        padding-left: 7px;
     }
 
     .slide-describtion p {
-        font-size: 20px;
+        font-size: 15px;
+        width: 78%;
     }
 
     .parenthood {
@@ -1198,7 +1445,7 @@ form {
     form {
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        /* gap: 20px; */
         padding-top: 25px;
     }
 
@@ -1216,6 +1463,70 @@ form {
     .myaccount img {
         display: none;
     }
+
+    .first-row {
+        display: grid;
+        justify-content: space-between;
+        gap: 20px
+    }
+
+    .product {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .maindetails {
+        display: grid;
+        text-align: center;
+        border-radius: 3px;
+        padding: 19px 0;
+    }
+
+    .costumer {
+        display: grid;
+    }
+
+    .costumer img {
+        width: 100%;
+    }
+
+    .pharmasy {
+        padding: 0px 0 32px 0;
+        text-align: center;
+    }
+
+    .pharmasy h1 {
+        font-size: 43px;
+        padding-bottom: 14px;
+    }
+
+    .pharmasy h3 {
+        font-size: 24px;
+    }
+
+    .pharmasy p {
+        font-size: 19px;
+    }
+
+    form {
+        display: grid;
+        justify-content: center;
+        padding: 0;
+    }
+
+    input#fname,
+    input#email {
+        width: 580px;
+    }
+
+    .details h1 {
+        font-size: 28px;
+    }
+
+    .details p {
+        font-size: 22px;
+        padding: 10px 0 20px 0;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1225,6 +1536,7 @@ form {
 
     .instore {
         display: grid;
+        justify-content: center;
     }
 
     .product {
@@ -1250,10 +1562,8 @@ form {
         width: fit-content;
     }
 
-    .costumer {
-        display: grid;
-    }
 
+    /* 
     .pharmasy {
         padding: 0px 0 32px 0;
         text-align: center;
@@ -1270,8 +1580,9 @@ form {
 
     .pharmasy p {
         font-size: 19px;
-    }
+    } */
 
+    /* 
     .first-row {
         display: flex;
         justify-content: space-between;
@@ -1283,13 +1594,13 @@ form {
         text-align: center;
         border-radius: 3px;
         padding: 19px 0;
-    }
+    } */
 
     /* .query :nth-child(4) {
         display: none;
     } */
 
-    .number h4 {
+    .number h5 {
         font-size: 12px;
     }
 
@@ -1372,11 +1683,12 @@ form {
         justify-content: center;
     }
 
+    /* 
     form {
         display: grid;
         justify-content: center;
         padding: 0;
-    }
+    } */
 
     input#fname,
     input#email {
@@ -1385,6 +1697,9 @@ form {
 
     .footer {
         flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        border-right: none;
     }
 
     .media,
