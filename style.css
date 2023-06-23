@@ -634,11 +634,6 @@ button.view {
     margin: 6px 5px;
 }
 
-/* .brands img {
-    outline: 2px solid #ebebeb;
-    outline-offset: 15px;
-} */
-
 .top-product-prev,
 .top-product-next {
     color: #cfcfcf;
@@ -927,7 +922,6 @@ form {
     padding: 0px 6px;
 }
 
-/* .media img:hover, */
 .payment img:hover {
     box-shadow: 0 0 11px rgb(133, 132, 105);
 }
@@ -1477,7 +1471,6 @@ form {
     form {
         justify-content: center;
         align-items: center;
-        /* gap: 20px; */
         padding-top: 25px;
     }
 

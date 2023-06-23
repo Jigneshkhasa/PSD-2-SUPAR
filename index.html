@@ -82,7 +82,6 @@
                     <h5>0</h5>
                 </div>
             </div>
-
         </div>
     </div>
     <div class="hide-item">
@@ -98,11 +97,9 @@
                     <p>Call Between 7am-8pm</p>
                 </div>
             </div>
-
         </div>
         <div class="mobile-navbar">
             <ul>
-
                 <form action="/">
                     <select name="country" id="shopall">
                         <option value="option">Shop All</option>
@@ -111,7 +108,6 @@
                         <option value="option">option 4</option>
                     </select>
                 </form>
-
                 <a href="/">
                     <li>Health Equipment</li>
                 </a>
@@ -220,6 +216,8 @@
             </ul>
         </div>
     </div>
+
+    <!-- MAIN SLIDER -->
     <div class="mainslider">
         <div class="sliders">
             <img src="./image/main-image-slide.png" alt="">
@@ -272,7 +270,7 @@
             </div>
         </div>
     </div>
-
+    <!-- PRODUCTS -->
     <div class="container">
         <div class="product">
             <div class="first-row">
@@ -332,9 +330,9 @@
                 </div>
             </div>
         </div>
+        <!-- TABS -->
         <div class="multitabs">
             <div class="nav">
-
                 <a class="tab-link active" data-tab="1">Featured</a>
                 <span class="arroy">/</span>
                 <a class="tab-link" data-tab="2">New Arrivals</a>
@@ -661,6 +659,7 @@
             </div>
         </div>
     </div>
+    <!-- BRANDS -->
     <div class="container">
         <div class="brands">
             <p>Our Top Brands</p>
@@ -695,6 +694,7 @@
             </div>
         </div>
     </div>
+    <!-- OUR CONTACT INFORMATION -->
     <div class="query">
         <div class="container">
             <div class="contactinfo">
@@ -724,6 +724,7 @@
             </div>
         </div>
     </div>
+    <!-- MAP ADRESS -->
     <div class="mainmap">
         <img src="./image/mapimg.png" alt="">
     </div>
@@ -741,6 +742,7 @@
                 <button id="sub" type="submit">Subscribe <i class="fa-regular fa-paper-plane"></i></button>
             </form>
         </div>
+        <!-- FOOTER SECTION -->
         <div class="footer">
             <div class="quick">
                 <h1>Quick Links</h1>
@@ -834,6 +836,7 @@
                     </a>
                 </ul>
             </div>
+
             <div class="connect">
                 <p class="forblue">Connect With Us</p>
                 <div class="media">
@@ -863,13 +866,16 @@
             <a href="/">© 2018 <span> SuperPharmacyPlus</span>. All Rights Reserved.</a>
         </div>
     </div>
-
+    <!-- SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/a97145b659.js" crossorigin="anonymous"></script>
     <script>
+
+        //  jQuery and JavaScript
+        // tab js
         $(document).ready(function () {
             $(".nav a").click(function () {
                 console.log("click");
@@ -880,10 +886,11 @@
                     .siblings()
                     .removeClass("active");
             });
-
+            // main slider
             $('.mainslider').slick({
                 arrows: false
             });
+            // upsslider
             $('.uspslider').slick({
                 slidesToShow: 4,
                 slidesToScroll: 2,
@@ -912,6 +919,7 @@
 
                 ]
             });
+            // tab slider
             $('.feachered').slick({
                 speed: 300,
                 slidesToShow: 5,
@@ -941,6 +949,7 @@
                         }
                     }]
             });
+            // brands slider
             $('.brandimg').slick({
                 speed: 300,
                 slidesToShow: 6,
@@ -978,9 +987,7 @@
                         }
                     }]
             });
-
-
-
+            // instore sarvices
             $(".view").click(function () {
                 $(".hide-conten").slideToggle();
                 $(".hide-conten").css("display", "flex")
